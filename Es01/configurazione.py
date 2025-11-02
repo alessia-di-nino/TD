@@ -6,7 +6,7 @@ ad2 = tdwf.AD2() # connessione all’hardware
  
  
 scope = tdwf.Scope(ad2.hdwf) # inizializzazione oscilloscopio
-scope.fs = 1e6 # => frequenza di sampling impostata a 1MSa/s
+scope.fs = 1e3 # => frequenza di sampling impostata a 1MSa/s
 scope.npt = 1000 # => acquisizione impostata a 1000 punti
  
 scope.ch1.rng = 5 # range Ch1 su [-2.5,+2.5]
